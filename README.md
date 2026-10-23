@@ -49,24 +49,21 @@ I laid out every section of the carrier board to make the console as comfortable
 
 ## Bill of Materials (BOM)
 
-| Item | Qty | Supplier | Cost / Item | Total Cost | Link |
-| :--- | :---: | :--- | :---: | :---: | :--- |
-| **ESP32-WROOM-32 DevKit V1 (38-Pin)** | 1 | Robu.in | $4.50 | $4.50 | [Robu.in](https://robu.in/product/esp32-development-board-ch340-38-pins/) |
-| **3.5" SPI Color TFT LCD (480x320 ILI9488)** | 1 | Robu.in | $9.80 | $9.80 | [Robu.in](https://robu.in/product/3-5-inch-tft-lcd-screen-module-spi-interface/) |
-| **MAX98357A I2S 3W Class-D Audio Amp** | 1 | Robu.in | $2.40 | $2.40 | [Robu.in](https://robu.in/product/max98357a-i2s-3w-class-d-amplifier-module/) |
-| **4Ω 3W Mini Cavity Full-Range Speaker** | 1 | Robu.in | $1.20 | $1.20 | [Robu.in](https://robu.in/product/mini-stereo-speaker-4-ohm-3w/) |
-| **TTP223 Capacitive Touch Sensor Modules** | 4 | Robu.in | $0.35 | $1.40 | [Robu.in](https://robu.in/product/ttp223-touch-key-switch-module/) |
-| **6x6mm Tactile Push Buttons (SW1-SW4)** | 4 | Robu.in | $0.10 | $0.40 | [Robu.in](https://robu.in/product/6x6x5mm-tactile-push-button-switch/) |
-| **TP4056 USB-C 1A LiPo Charging Module** | 1 | Robu.in | $0.65 | $0.65 | [Robu.in](https://robu.in/product/tp4056-type-c-usb-5v-1a-18650-lithium-battery-charger-module/) |
-| **3.7V 1200mAh Rechargeable LiPo Battery** | 1 | Robu.in | $4.20 | $4.20 | [Robu.in](https://robu.in/product/3-7v-1200mah-lipo-battery/) |
-| **SPDT Slide Switch (Power ON/OFF)** | 1 | Robu.in | $0.25 | $0.25 | [Robu.in](https://robu.in/product/ss12d00-spdt-slide-switch/) |
-| **KF301-2P 5.08mm Screw Terminal Blocks** | 2 | Robu.in | $0.20 | $0.40 | [Robu.in](https://robu.in/product/2-pin-5-08mm-pitch-pcb-mount-screw-terminal-block/) |
-| **JST-PH 2.0mm 2-Pin Male Connector** | 1 | Robu.in | $0.15 | $0.15 | [Robu.in](https://robu.in/product/jst-ph-2-0mm-2-pin-male-connector/) |
-| **40-Pin 2.54mm Female Socket Headers** | 2 | Robu.in | $0.30 | $0.60 | [Robu.in](https://robu.in/product/40-pin-2-54mm-female-single-row-header-strip/) |
-| **Custom BEAT BOARD PCB (200x120mm)** | 1 | JLCPCB | $1.90 | $1.90 | [JLCPCB](https://jlcpcb.com/) |
-| **M3x12mm Brass Hex Standoffs & Screws** | 4 | Robu.in | $0.20 | $0.80 | [Robu.in](https://robu.in/product/m3-brass-hex-standoff-kit/) |
-| **Estimated Shipping** | 1 | — | $3.00 | $3.00 | — |
-| **Total Cost** | **26** | — | — | **$31.65** | — |
+Item,Quantity,Designator,Supplier,Cost Per Item (USD),Total Cost (USD),Product Link
+ESP32 38-Pin Development Board (Dual-Core WiFi/BT),1,U_ESP32,Robu.in,$5.35,$5.35,https://robu.in/product/esp32-38pin-development-board-wifibluetooth-ultra-low-power-consumption-dual-core/
+3.5" TFT Touch Screen Display Module,1,DISP1,Robu.in,$11.30,$11.30,https://robu.in/product/3-5-inch-tft-touch-screen-module-mega-2560-r3/
+Adafruit MAX98357A I2S 3W Class-D Amplifier Breakout Board,1,U_AMP,Robu.in,$5.95,$5.95,https://robu.in/product/adafruit-max98357a-i2s-3w-class-d-amplifier-breakout-board/
+4Ω 40mm Diameter 3W Full-Range Audio Speaker,1,SPK1,Robogears,$0.81,$0.81,https://www.robogears.in/shop/012020-4ohm-40mm-diameter-3w-full-range-audio-speaker-2986
+TTP223 Touch Key Sensor Modules (Pack of 2),2,"TP1, TP2, TP3, TP4",Robu.in,$0.23,$0.46,https://robu.in/product/ttp223-touch-key-module-2pcs/
+6x6x5mm Tactile Push Button Switches (Pack of 10),1,"SW1, SW2, SW3, SW4",Robu.in,$0.23,$0.23,https://robu.in/product/6x6x5-tactile-push-button-switch/
+TP4056 1A Li-ion Battery Charger Module (Type-C),1,MOD_CHG,Robu.in,$0.23,$0.23,https://robu.in/product/tp4056-1a-li-ion-lithium-battery-charging-module-with-current-protection-type-c/
+1250mAh PCM Protected Micro Li-Po Battery (3.7V),1,BAT1,Robu.in,$5.46,$5.46,https://robu.in/product/1250mah-pcm-protected-micro-li-po-battery/
+Subminiature SPDT Slide Power Switch,1,SW_PWR,Robu.in,$0.18,$0.18,https://robu.in/product/1-month-warranty-257/
+KF301 2-Pin 5.08mm Pitch Screw Terminal Blocks (Pack of 5),1,"J_SPK, J_BAT_TERM",Robu.in,$0.42,$0.42,https://robu.in/product/kf301-2-pin-5-08mm-pitch-plug-in-screw-terminal-block-connector-pack-of-5/
+JST 2-Pin Male Connector (2mm Pitch),1,J_BAT_PIN,Robu.in,$0.06,$0.06,https://robu.in/product/jst-sh-2-pin-connector-2mm-pitch/
+2.54mm 1x40-Pin Female Single Row Header Strips (Pack of 10),1,"J_ESP_L, J_ESP_R, J_TFT, J_AMP, J_TP1-4",Robu.in,$1.43,$1.43,https://robu.in/product/2-54mm-1x40-pin-female-single-row-header-strip-pack-of-10/
+Custom BEAT BOARD Carrier PCB Manufacturing (5 pcs),5,PCB1,Robu.in,$36.97,$36.97,https://robu.in/product/online-pcb-manufacturing-service/
+Total,18,—,—,—,$73.68,—
 
 *Downloadable spreadsheet format is available at [BOM.csv](BOM.csv).*
 
