@@ -25,10 +25,6 @@ When the **MODE** button is pressed, a menu appears on the screen. This menu all
 #### Bottom Layer Layout (Power Rails & Ground Plane)
 ![PCB Layout Bottom](./docs/images/pcb_layout_bottom.png)
 
-### Wiring Diagram (Off-Board Hand-Wired Connections)
-![Wiring Diagram](./docs/images/wiring_diagram.png)
-
-*(Photos of the real assembled board will be added here as soon as my PCBs arrive in the mail!)*
 
 ---
 ---
