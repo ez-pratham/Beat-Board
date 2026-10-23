@@ -1,25 +1,18 @@
-# BEAT BOARD ⭐
-### Handheld ESP32 Cyber-Console Synthesizer & Drum Machine (version P.V.01)
+# BEAT BOARD
 
-**BEAT BOARD** is a handheld music device and synthesizer with a cyber-retro aesthetic, built around the dual-core **ESP32** microcontroller. It features four gold-plated capacitive touch pads for finger drumming and expressive brass solos, an interactive 3.5" color display showing real-time audio waveforms and sequencer grids, a dedicated $2 \times 2$ Master Control Pad for navigation, and an onboard MAX98357A I2S Class-D amplifier driving an external 3W full-range acoustic speaker.
+**BEAT BOARD** is a handheld music device and synthesizer that has a cyber-retro look and feel. It is built around the dual-core **ESP32** microcontroller. It has four gold-plated touch pads that are used for finger drumming and for playing brass lead notes. It also has a 3.5" color screen that shows an audio interface in real time. There is a $2 \times 2$ control pad for master control. There is also an onboard MAX98357A I2S Class-D amplifier that powers a speaker with a cavity design.
 
-Pressing the **MODE** button brings up an interactive on-screen menu allowing you to instantly switch between an **808 Drum Machine** (with a live 16-step visual sequencer) and a **4-Valve Acoustic Trumpet Brass Synth** (complete with real-time moving valve pistons and soundwave flares)!
+When the **MODE** button is pressed, a menu appears on the screen. This menu allows the user to switch between a **808 Drum Machine** that has a live 16-step sequencer and a **4-Valve Acoustic Trumpet Brass Synth** that has moving valve pistons and soundwave flares!
 
 ---
 
 ## Photos & Screenshots
-
-### 3D Render (Assembled Cyber-Console)
-![BEAT BOARD 3D Render](./docs/renders/music_pad_3d_render_v2_3.jpg)
 
 ### Top View (Silkscreen Doodles & Controls)
 ![Top View](./docs/renders/pcb_render_top.png)
 
 ### Bottom View (ROG "BEAT BOARD" & Punk Doodles)
 ![Bottom View](./docs/renders/pcb_render_bottom.png)
-
-### Isometric Perspective View
-![Perspective View](./docs/renders/pcb_render_perspective.png)
 
 ### Schematic
 ![Schematic Diagram](./docs/images/schematic.png)  
@@ -38,33 +31,29 @@ Pressing the **MODE** button brings up an interactive on-screen menu allowing yo
 *(Photos of the real assembled board will be added here as soon as my PCBs arrive in the mail!)*
 
 ---
+---
 
 ## How It Works
 
 ### How the parts fit on the console
 
-I laid out every section of the $200 \times 120\text{ mm}$ carrier PCB to make the console as ergonomic and comfortable as possible for fast finger drumming and trumpet solos:
+I laid out every section of the carrier board to make the console as comfortable as possible for fast finger drumming and trumpet solos:
 
-1. **Center Top (Display)**:
-   - A **3.5" Color TFT LCD module (480x320 SPI)** sits elevated in the upper center of the board.
-   - Displays live audio waveforms, 16-step drum sequencer grids, BPM tempo, battery status, and the interactive instrument selection menu.
+1. **Center Top (Display)**: A **3.5" Color TFT LCD module (480x320 SPI)** is raised at the center of the console. It shows audio waveforms, the 16-step drum sequencer grid, BPM tempo, battery status, and the interactive instrument selection menu.
 
-2. **Center Core (Microcontroller)**:
-   - An **ESP32-WROOM-32 DevKit** microcontroller sits in dual female socket headers directly below the display.
-   - Its USB-C port faces downwards at the bottom edge, making firmware flashing and USB power charging convenient.
-   - Ample clearance surrounds both sides of the ESP32 to eliminate heat buildup and mechanical crowding.
+2. **Center Core (Microcontroller)**: An **ESP32-WROOM-32 DevKit** microcontroller sits in female socket headers directly below the display. Its USB-C port faces downwards at the bottom edge, making firmware flashing and USB power convenient.
 
 3. **Left Wing (Master Navigation & Drum Pads)**:
-   - **Master Control Pad (Top Left)**: A $2 \times 2$ tactile button grid (`UP`, `DOWN`, `SELECT`, `MODE`) lets your left thumb navigate menus, change kits, shift octaves, or mute the horn without lifting your hands.
-   - **Left Touch Pads (Bottom Left)**: Two large $24 \times 24\text{ mm}$ gold-plated capacitive touch pads (`PAD 1: KICK / Bb3` and `PAD 2: SNARE / D4`) driven by two compact red TTP223 daughterboards.
+   - **Master Control Pad (Top Left)**: A $2 \times 2$ grid of tactile buttons (`UP`, `DOWN`, `SELECT`, `MODE`) lets your left thumb navigate menus, change kits, shift octaves, or mute the horn without lifting your hands.
+   - **Left Touch Pads (Bottom Left)**: Two $24 \times 24\text{ mm}$ gold-plated capacitive touch pads (`PAD 1: KICK / Bb3` and `PAD 2: SNARE / D4`) are driven by two small red TTP223 daughterboards.
 
 4. **Dedicated Top-Right Audio Bay**:
-   - The **MAX98357A I2S 3W Class-D amplifier module** and green **KF301 2-pin speaker screw terminal block** are placed in the isolated top-right corner.
-   - Twisted red and black speaker wires leave cleanly from the top-right edge to a 3W cavity speaker, completely removed from your playing hands.
+   - The **MAX98357A I2S 3W Class-D amplifier module** and green **KF301 2-pin speaker terminal block** are set in the isolated top-right corner.
+   - Twisted red and black speaker wires leave cleanly from the top-right edge to a 3W cavity speaker, fully removed from your playing hands!
 
 5. **Right Wing (100% Unobstructed Touch Controls)**:
    - The outermost elements on the right edge are `PAD 3: HI-HAT / F4` and `PAD 4: CLAP / Bb4`.
-   - Your fingers and thumbs have direct, unhindered access to the pads with zero obstacles or hurdles in the playing zone.
+   - Your fingers and thumbs have unhindered access to the pads with zero obstacles or hurdles!
 
 6. **Bottom Power Subsystem**:
    - Features a **TP4056 USB-C LiPo charger**, an aluminum **SPDT slide power switch**, a **JST-PH 2.0mm connector**, and a **KF301 screw terminal** for universal 3.7V LiPo battery packs.
@@ -89,79 +78,63 @@ I laid out every section of the $200 \times 120\text{ mm}$ carrier PCB to make t
 | **2.54mm 1x40-Pin Female Single Row Header Strips (Pack of 10)** | 1 | Robu.in | $1.43 | $1.43 | [Robu.in](https://robu.in/product/2-54mm-1x40-pin-female-single-row-header-strip-pack-of-10/) |
 | **Custom BEAT BOARD Carrier PCB Manufacturing (5 pcs)** | 5 | Robu.in | $7.39 | $36.97 | [Robu.in](https://robu.in/product/online-pcb-manufacturing-service/) |
 | **Total Project Cost** | **18** | — | — | **$68.85** | — |
-
-> **Cost-Saving Tip**: If ordering PCBs via JLCPCB or PCBWay, the 5-board PCB manufacturing cost drops to ~$2.00, bringing the total project cost down to **~$33.88 USD**!
-
-*Downloadable spreadsheet format is available at [BOM.csv](./BOM.csv).*
+*Downloadable spreadsheet format is available at [BOM.csv](BOM.csv).*
 
 ---
 
 ## How to Build
 
-### 1. Solder Low-Profile Components
-- Insert and solder the four tactile push-buttons (`SW1`, `SW2`, `SW3`, `SW4`) in the Master Control Pad area on the left wing.
-- Solder the SPDT slide power switch (`SW_PWR`) at the bottom edge.
-
-### 2. Solder Connectors & Screw Terminals
-- Solder the two KF301 green 2-pin screw terminal blocks:
-  - `J_SPK` in the top-right audio bay.
-  - `J_BAT_TERM` in the bottom power bay.
-- Solder the 2-pin JST-PH battery header (`J_BAT_PIN`).
-
-### 3. Solder Female Socket Headers
-- Cut and solder standard 2.54mm female header strips:
-  - `J_ESP_L` and `J_ESP_R`: Two 19-pin female rows for the ESP32 DevKit.
-  - `J_TFT`: One 9-pin female row for the 3.5" TFT display.
-  - `J_AMP`: One 7-pin female row for the MAX98357A I2S amplifier module.
-  - `J_TP1` to `J_TP4`: Four 3-pin female rows for the TTP223 touch sensor boards.
-  - `J_CHG`: One 4-pin female row for the TP4056 USB-C charging module.
-
-### 4. Mount M3 Standoffs
-- Screw four M3x12mm brass standoffs into corner mounting holes `H1`, `H2`, `H3`, and `H4` to create sturdy desk feet and protect the bottom solder joints.
-
-### 5. Plug In Modular Breakout Boards
-- Plug the ESP32 DevKit into its dual socket headers (ensure the USB-C port points downwards toward the bottom edge).
-- Plug the 3.5" TFT display into `J_TFT`.
-- Plug the MAX98357A amplifier into `J_AMP`.
-- Plug the four red TTP223 touch boards into `J_TP1` through `J_TP4`.
-- Plug the TP4056 module into `J_CHG`.
-
-### 6. Hand-Wired External Connections
-Only two off-board components require hand wiring:
-1. **Speaker Wiring**: Strip ~5mm from the red and black wires of the 4Ω 3W speaker. Insert the red wire into `J_SPK` Pin 1 (SPK+) and the black wire into `J_SPK` Pin 2 (SPK-), then tighten down the screw terminals.
-2. **Battery Wiring**: Connect your 3.7V LiPo battery's red wire to Pin 1 (+) and black wire to Pin 2 (-) on `J_BAT_TERM`, or plug directly into `J_BAT_PIN`.
-3. Slide `SW_PWR` to the **ON** position and start making beats!
+1. **Solder the Low-Profile Components First**:
+   - Insert and solder the four tactile push-buttons (`SW1`, `SW2`, `SW3`, `SW4`) in the Master Control Pad area.
+   - Solder the SPDT slide power switch (`SW_PWR`) at the bottom edge.
+2. **Solder Terminal Blocks & Connectors**:
+   - Solder the two KF301 screw terminal blocks: `J_SPK` in the top-right audio bay and `J_BAT_TERM` in the bottom power bay.
+   - Solder the 2-pin JST-PH battery header (`J_BAT_PIN`).
+3. **Solder the Female Socket Headers**:
+   - Cut and solder female socket header strips for:
+     - `J_ESP_L` and `J_ESP_R` (two 19-pin rows for the ESP32 DevKit).
+     - `J_TFT` (one 9-pin row for the TFT display module).
+     - `J_AMP` (one 7-pin row for the MAX98357A amplifier).
+     - `J_TP1` to `J_TP4` (four 3-pin rows for the TTP223 touch sensor boards).
+     - `J_CHG` (one 4-pin row for the TP4056 charging module).
+4. **Mount the M3 Brass Standoffs**:
+   - Screw the four M3x12mm brass standoffs into corner mounting holes `H1`, `H2`, `H3`, and `H4` to form sturdy desk legs.
+5. **Plug In the Modular Breakout Boards**:
+   - Plug the ESP32 DevKit into its dual headers (USB-C port facing downwards).
+   - Plug the 3.5" TFT LCD display into `J_TFT`.
+   - Plug the MAX98357A amplifier into `J_AMP`.
+   - Plug the four red TTP223 touch boards into `J_TP1` through `J_TP4`.
+6. **Connect Speaker & Battery**:
+   - Connect the red $(+)$ and black $(-)$ speaker wires to `J_SPK` and tighten the terminal screws.
+   - Plug your 3.7V LiPo battery into `J_BAT_PIN` or `J_BAT_TERM`.
+   - Slide `SW_PWR` to ON and start jamming!
 
 ---
 
 ## Software
 
-The firmware supports both physical hardware and online simulation via Wokwi and standard modern browsers.
+The firmware supports both real hardware and the Wokwi online web simulator.
 
 ### Arduino IDE Upload Instructions
 1. Open the Arduino IDE.
-2. Under **Tools > Board > esp32**, select **ESP32 Dev Module**.
-3. Under **Sketch > Include Library > Manage Libraries...**, install:
+2. In **Tools > Board**, select **ESP32 Dev Module**.
+3. In **Sketch > Include Library > Manage Libraries...**, install:
    - `Adafruit GFX Library`
    - `Adafruit ILI9341` (or `Adafruit_ILI9488`)
 4. Open the firmware sketch:
-   - **Multi-Engine Firmware**: [firmware/music_pad_wokwi.ino](./firmware/music_pad_wokwi.ino)
-   - **Dedicated Trumpet Synthesizer**: [firmware/standalone_trumpet_synth/standalone_trumpet_synth.ino](./firmware/standalone_trumpet_synth/standalone_trumpet_synth.ino)
-5. Select your ESP32's COM port and click **Upload**!
-
-### Interactive Web Simulator
-You can also preview and test the complete audio and UI engine directly in your web browser by opening [music_pad_simulator.html](./music_pad_simulator.html).
+   - **Multi-Engine Firmware**: [firmware/music_pad_wokwi.ino](firmware/music_pad_wokwi.ino)
+   - **Dedicated Trumpet Synthesizer**: [firmware/standalone_trumpet_synth/standalone_trumpet_synth.ino](firmware/standalone_trumpet_synth/standalone_trumpet_synth.ino)
+5. Select your COM port and hit **Upload**!
 
 ---
 
 ## KiCad & Production Files
 
-All hardware design files are verified with KiCad 10.0 and have achieved a verified **0 DRC violations, 0 unconnected items** rating:
+All hardware design files are verified with KiCad 10.0 and have achieved a verified **0 DRC violation, 0 unconnected item** score:
 
-- **KiCad Project File**: [kicad_project/music_pad.kicad_pro](./kicad_project/music_pad.kicad_pro)
-- **KiCad Schematic**: [kicad_project/music_pad.kicad_sch](./kicad_project/music_pad.kicad_sch)
-- **KiCad PCB Layout**: [kicad_project/music_pad.kicad_pcb](./kicad_project/music_pad.kicad_pcb)
-- **Production Gerber Archive**: [gerbers.zip](./gerbers.zip) *(Ready for instant submission to JLCPCB, PCBWay, or Robu)*
-- **Bill of Materials Spreadsheet**: [BOM.csv](./BOM.csv)
-- **Official DRC Verification Report**: [DRC.rpt](./DRC.rpt)
-- **Engineering Journal**: [JOURNAL.md](./JOURNAL.md)
+- **KiCad Project File**: [kicad_project/music_pad.kicad_pro](kicad_project/music_pad.kicad_pro)
+- **KiCad Schematic**: [kicad_project/music_pad.kicad_sch](kicad_project/music_pad.kicad_sch)
+- **KiCad PCB Layout**: [kicad_project/music_pad.kicad_pcb](kicad_project/music_pad.kicad_pcb)
+- **Fabrication Gerber Archive**: [gerbers.zip](gerbers.zip) *(Ready for JLCPCB, PCBWay)*
+- **Bill of Materials Spreadsheet**: [BOM.csv](BOM.csv)
+- **Engineering Journal**: [JOURNAL.md](JOURNAL.md)
