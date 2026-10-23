@@ -81,29 +81,11 @@ I laid out every section of the carrier board to make the console as comfortable
 ## How to Build
 
 1. **Solder the Low-Profile Components First**:
-   - Insert and solder the four tactile push-buttons (`SW1`, `SW2`, `SW3`, `SW4`) in the Master Control Pad area.
-   - Solder the SPDT slide power switch (`SW_PWR`) at the bottom edge.
 2. **Solder Terminal Blocks & Connectors**:
-   - Solder the two KF301 screw terminal blocks: `J_SPK` in the top-right audio bay and `J_BAT_TERM` in the bottom power bay.
-   - Solder the 2-pin JST-PH battery header (`J_BAT_PIN`).
 3. **Solder the Female Socket Headers**:
-   - Cut and solder female socket header strips for:
-     - `J_ESP_L` and `J_ESP_R` (two 19-pin rows for the ESP32 DevKit).
-     - `J_TFT` (one 9-pin row for the TFT display module).
-     - `J_AMP` (one 7-pin row for the MAX98357A amplifier).
-     - `J_TP1` to `J_TP4` (four 3-pin rows for the TTP223 touch sensor boards).
-     - `J_CHG` (one 4-pin row for the TP4056 charging module).
 4. **Mount the M3 Brass Standoffs**:
-   - Screw the four M3x12mm brass standoffs into corner mounting holes `H1`, `H2`, `H3`, and `H4` to form sturdy desk legs.
 5. **Plug In the Modular Breakout Boards**:
-   - Plug the ESP32 DevKit into its dual headers (USB-C port facing downwards).
-   - Plug the 3.5" TFT LCD display into `J_TFT`.
-   - Plug the MAX98357A amplifier into `J_AMP`.
-   - Plug the four red TTP223 touch boards into `J_TP1` through `J_TP4`.
 6. **Connect Speaker & Battery**:
-   - Connect the red $(+)$ and black $(-)$ speaker wires to `J_SPK` and tighten the terminal screws.
-   - Plug your 3.7V LiPo battery into `J_BAT_PIN` or `J_BAT_TERM`.
-   - Slide `SW_PWR` to ON and start jamming!
 
 ---
 
@@ -119,7 +101,6 @@ The firmware supports both real hardware and the Wokwi online web simulator.
    - `Adafruit ILI9341` (or `Adafruit_ILI9488`)
 4. Open the firmware sketch:
    - **Multi-Engine Firmware**: [firmware/music_pad_wokwi.ino](firmware/music_pad_wokwi.ino)
-   - **Dedicated Trumpet Synthesizer**: [firmware/standalone_trumpet_synth/standalone_trumpet_synth.ino](firmware/standalone_trumpet_synth/standalone_trumpet_synth.ino)
 5. Select your COM port and hit **Upload**!
 
 ---
