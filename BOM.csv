@@ -1,2 +1,17 @@
-Item,Qty,Supplier,Cost/item,Total Cost,link
-Estimated total shipping,1,,,$0.00,
+## Bill of Materials (BOM)
+| Item | Quantity | Designator | Supplier | Cost Per Item (USD) | Total Cost (USD) | Product Link |
+| :--- | :---: | :---: | :--- | :---: | :---: | :--- |
+| **ESP32 38-Pin Development Board (Dual-Core WiFi/BT)** | 1 | `U_ESP32` | Robu.in | $5.35 | $5.35 | [Robu.in](https://robu.in/product/esp32-38pin-development-board-wifibluetooth-ultra-low-power-consumption-dual-core/) |
+| **3.5" TFT Touch Screen Display Module** | 1 | `DISP1` | Robu.in | $11.30 | $11.30 | [Robu.in](https://robu.in/product/3-5-inch-tft-touch-screen-module-mega-2560-r3/) |
+| **Adafruit MAX98357A I2S 3W Class-D Amplifier Breakout Board** | 1 | `U_AMP` | Robu.in | $5.95 | $5.95 | [Robu.in](https://robu.in/product/adafruit-max98357a-i2s-3w-class-d-amplifier-breakout-board/) |
+| **4Ω 40mm Diameter 3W Full-Range Audio Speaker** | 1 | `SPK1` | Robogears | $0.81 | $0.81 | [Robogears](https://www.robogears.in/shop/012020-4ohm-40mm-diameter-3w-full-range-audio-speaker-2986) |
+| **TTP223 Touch Key Sensor Modules (Pack of 2)** | 2 | `TP1, TP2, TP3, TP4` | Robu.in | $0.23 | $0.46 | [Robu.in](https://robu.in/product/ttp223-touch-key-module-2pcs/) |
+| **6x6x5mm Tactile Push Button Switches (Pack of 10)** | 1 | `SW1, SW2, SW3, SW4` | Robu.in | $0.23 | $0.23 | [Robu.in](https://robu.in/product/6x6x5-tactile-push-button-switch/) |
+| **TP4056 1A Li-ion Battery Charger Module (Type-C)** | 1 | `MOD_CHG` | Robu.in | $0.23 | $0.23 | [Robu.in](https://robu.in/product/tp4056-1a-li-ion-lithium-battery-charging-module-with-current-protection-type-c/) |
+| **1250mAh PCM Protected Micro Li-Po Battery (3.7V)** | 1 | `BAT1` | Robu.in | $5.46 | $5.46 | [Robu.in](https://robu.in/product/1250mah-pcm-protected-micro-li-po-battery/) |
+| **Subminiature SPDT Slide Power Switch** | 1 | `SW_PWR` | Robu.in | $0.18 | $0.18 | [Robu.in](https://robu.in/product/1-month-warranty-257/) |
+| **KF301 2-Pin 5.08mm Pitch Screw Terminal Blocks (Pack of 5)** | 1 | `J_SPK, J_BAT_TERM` | Robu.in | $0.42 | $0.42 | [Robu.in](https://robu.in/product/kf301-2-pin-5-08mm-pitch-plug-in-screw-terminal-block-connector-pack-of-5/) |
+| **JST 2-Pin Male Connector (2mm Pitch)** | 1 | `J_BAT_PIN` | Robu.in | $0.06 | $0.06 | [Robu.in](https://robu.in/product/jst-sh-2-pin-connector-2mm-pitch/) |
+| **2.54mm 1x40-Pin Female Single Row Header Strips (Pack of 10)** | 1 | `J_ESP_L, J_ESP_R, J_TFT, J_AMP, J_TP1-4` | Robu.in | $1.43 | $1.43 | [Robu.in](https://robu.in/product/2-54mm-1x40-pin-female-single-row-header-strip-pack-of-10/) |
+| **Custom BEAT BOARD Carrier PCB Manufacturing (5 pcs)** | 5 | `PCB1` | Robu.in | $7.39 | **$36.97** | [Robu.in](https://robu.in/product/online-pcb-manufacturing-service/) |
+| **Total Project Cost** | **18** | — | — | — | **$68.85** | — |
