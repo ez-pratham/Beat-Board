@@ -1,0 +1,3 @@
+# Wokwi Arduino ESP32 Libraries
+Adafruit GFX Library
+Adafruit ILI9341
